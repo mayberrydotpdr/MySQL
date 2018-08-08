@@ -1,0 +1,19 @@
+Be sure that your mysql\bin folder is part of your $PATH variable:
+
+Go to Control Panel -> System -> Advanced
+Click Environment Variables
+
+Under System Variables find PATH and click on it.
+In the Edit windows, find the end of the string of paths (each path needs to be separated by a semi-colon ";" so you may need to add that to the end) add the path to your mysql\bin folder to the end paths.
+
+Go back to Desktop
+
+Close any command prompts you may have open Got to do this so the new $PATH variable will load.
+
+Re-open command prompt. Try running mysql -u root -p and if the path was set correctly, mysql will now run.
+
+Lines to ADD to Path:
+
+C:\Program Files\MySQL\MySQL Server 5.7\bin 
+%MYSQL_HOME%\bin 
+
